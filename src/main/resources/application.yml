@@ -18,3 +18,11 @@ logging:
     org.springframework: INFO # Spring 프레임워크 관련 로그를 INFO 레벨로 설정
     org.hibernate: INFO # Hibernate(JPA 구현체) 관련 로그를 INFO 레벨로 설정
     com.ohgiraffers.crud_back: DEBUG
+
+
+ftp:
+  server: 1.214.19.22
+  port: 2121
+  username: connectium
+  password: connectium
+#  upload-dir: src/main/resources/uploads

@@ -1,6 +1,7 @@
 package com.ohgiraffers.crud_back.view.controller;
 
 import com.ohgiraffers.crud_back.model.entity.Post;
+import com.ohgiraffers.crud_back.viewmodel.service.ImageService;
 import com.ohgiraffers.crud_back.viewmodel.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,10 +16,12 @@ import java.util.Optional;
 public class PostController {
 
     private final PostService postService;
+    private final ImageService imageService;
 
     @Autowired
-    public PostController(PostService postService) {
+    public PostController(PostService postService, ImageService imageService) {
         this.postService = postService;
+        this.imageService = imageService;
     }
 
     @GetMapping("/post")
